@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "definitions": {},
+    "id": "http://example.com/example.json",
+    "items": {
+        "id": "/items",
+        "minProperties": 0,
+        "properties": {
+            "animal": {
+                "id": "/items/properties/animal",
+                "type": "string"
+            },
+            "price": {
+                "id": "/items/properties/price",
+                "type": "number"
+            },
+            "quantity": {
+                "id": "/items/properties/quantity",
+                "type": "integer"
+            }
+        },
+        "required": [
+            "price",
+            "animal",
+            "quantity"
+        ],
+        "type": "object"
+    },
+    "type": "array"
+}
